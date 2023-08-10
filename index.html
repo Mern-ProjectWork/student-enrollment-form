@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <head>
     <title>STUDENT ENROLLMENT FORM</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Student enrollment form">
     <meta name="keyword" content="HTML,CSS">
     <meta name="view port" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <p>STUDENT ENROLLMENT FORM</p>
-    <p>
-        <label for="firstname">First Name</label><br>
-        <input type="text"id="firstname"name="firstname">
-    </p>
-    <p>
-        <label for="lastname">Last Name</label><br>
-        <input type="text"id="lastname"name=lastname>
-    </p>
-    <p>
-        <label for="regno">Register Number</label><br>
-        <input type="text"id="regno"name="regno" required>
-    </p>
-    <p>
-        <label for="phno">Mobile Number</label><br>
-        <input type="text"id="phno"name="phno"required
-        pattern="[6-9]{1}{0-9}">
-    </p>
-    <p>
-        <label for="gender">Gender</label><br>
-    </p>
-    <p>
-        <input type="radio"id="male"name="gender"value="Male">
-        <label for="radio">Male</label><br>
-        <input type="radio"id="Female"name="gender"value="Female">
-        <label for="radio">Female</label><br>
-    </p>
-    <p>
-        <label for="email">Email-Address</label><br>
-        <input type="text"id="email"name="email"required
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-    </p>
-    <p>
-        <label for="Dep">Department</label><br>
-        <input type="text"id="Dep"name="Dep" required> 
-    </p>
-    <p>
-        <label for="year">Year</label><br>
-        <select id="year" name="year" style="width:80px;">
-            <option value="1">I</option>
-            <option value="1">II</option>
-            <option value="1">III</option>
-            <option value="1">IV</option>
-        </select>
-    </p>
-    <p>
-        <label for="lang-known">Languages known</label><br>
-        <input type="checkbox"id="C"name="lang-known"value="C">
-        <label for="checkbox">C</label><br>
-        <input type="checkbox"id="C++"name="lang-known"value="C++">
-        <label for="checkbox">C++</label><br>
-        <input type="checkbox"id="Java"name="lang-known"value="Java">
-        <label for="checkbox">Java</label><br>
-        <input type="checkbox"id="Python"name="lang-known"value="Python">
-        <label for="checkbox">Python</label>
-    </p>
-    <p>
-        <label for="slot">Available Slots</label><br>
-    </p>
-    <p>
-        <input type="radio"id="slot1"name="slot"value="Slot1 : 10PM">
-        <label for="radio">Slot1 : 10PM</label><br>
-    </p>
-    <p>
-        <input type="radio"id="slot2"name="slot"value="slot2">
-        <label for="radio">Slot2 : 2PM</label><br>
-    </p>
-    <p>
-        <input type="radio"id="slot3"name="slot"value="slot3">
-        <label for="radio">Slot3 : 5PM</label><br>
-    </p>
-    <p>
-        <label for="Resume">Resume</label>
-        <input type="file" id="Resume" name="Resume" accept=".pdf"><br>
-    </p>
-    <p>
-        <button type="Submit">Submit</button>
-    </p>
+    <div class="Container">
+        <form>
+            <div class="firstname">
+                <label for="firstname">First Name</label><br>
+                <input type="text"id="firstname"name="firstname">
+            </div>
+            <div class="lastname">
+                <label for="lastname">Last Name</label><br>
+                <input type="text"id="lastname"name=lastname>
+            </div>
+            <div class="reg no">
+                <label for="regno">Register Number</label><br>
+                <input type="text"id="regno"name="regno" required>
+            </div>
+            <div class="phno">
+                <label for="phno">Mobile Number</label><br>
+                <input type="text"id="phno"name="phno"required
+                pattern="[6-9]{1}{0-9}">
+            </div>
+            <div class="gender">
+                <label for="gender">Gender</label><br>
+                <input type="radio"id="male"name="gender"value="Male">
+                <label for="radio">Male</label><br>
+                <input type="radio"id="Female"name="gender"value="Female">
+                <label for="radio">Female</label>
+                <br>
+            </div>
+            <div class ="email">
+                <label for="email">Email-Address</label><br>
+                <input type="text"id="email"name="email"required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+            </div>
+            <div class="Dep">
+                <label for="Dep">Department</label><br>
+                <input type="text"id="Dep"name="Dep" required> 
+            </div>
+            <div class="year">
+                <label for="year">Year</label><br>
+                <select id="year" name="year" style="width:80px;">
+                    <option value="1">I</option>
+                    <option value="1">II</option>
+                    <option value="1">III</option>
+                    <option value="1">IV</option>
+                </select>
+            </div>
+            <div class="lang-known">
+                <label for="lang-known">Languages known</label><br>
+                <input type="checkbox"id="C"name="lang-known"value="C">
+                <label for="checkbox">C</label><br>
+                <input type="checkbox"id="C++"name="lang-known"value="C++">
+                <label for="checkbox">C++</label><br>
+                <input type="checkbox"id="Java"name="lang-known"value="Java">
+                <label for="checkbox">Java</label><br>
+                <input type="checkbox"id="Python"name="lang-known"value="Python">
+                <label for="checkbox">Python</label>
+            </div>
+            <div class="slot">
+                <label for="slot">Available Slots</label><br>
+                <input type="radio"id="slot1"name="slot"value="Slot1 : 10PM">
+                <label for="radio">Slot1 : 10PM</label><br>
+                <input type="radio"id="slot2"name="slot"value="slot2">
+                <label for="radio">Slot2 : 2PM</label><br>
+                <input type="radio"id="slot3"name="slot"value="slot3">
+                <label for="radio">Slot3 : 5PM</label><br>
+            </div>
+            <div class="Resume">
+                <label for="Resume">Resume</label><br>
+                <input type="file" id="Resume" name="Resume" accept=".pdf"><br>
+            </div>
+            <div class="Submit">
+                <button type="Submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
 </body>
 </html>
